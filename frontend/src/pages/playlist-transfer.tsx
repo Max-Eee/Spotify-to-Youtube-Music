@@ -15,7 +15,7 @@ import { FaSpotify, FaYoutube, FaGithub, FaStar } from "react-icons/fa";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 // Use relative URL for Docker (proxied by nginx) or absolute URL for local dev
-const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "http://localhost:8080" : "");
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "http://127.0.0.1:8080" : "");
 
 interface Playlist {
     id: string;

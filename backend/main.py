@@ -28,10 +28,20 @@ app.config['SESSION_COOKIE_HTTPONLY'] = True
 app.config['SESSION_COOKIE_SECURE'] = False
 app.config['SESSION_COOKIE_NAME'] = 'StoY_session'
 app.config['SESSION_COOKIE_PATH'] = '/'
+app.config['SESSION_COOKIE_DOMAIN'] = None  # Allow localhost and 127.0.0.1
 app.config['PERMANENT_SESSION_LIFETIME'] = 3600  # 1 hour
 
+# CORS configuration for local development and Docker
+allowed_origins = [
+    os.getenv('FRONTEND_URL', 'http://localhost:3000'),
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+    'http://localhost:8080',
+    'http://127.0.0.1:8080'
+]
+
 CORS(app, 
-     origins=[os.getenv('FRONTEND_URL', 'http://localhost:3000'), 'http://localhost:3000', 'http://127.0.0.1:3000'],
+     origins=allowed_origins,
      supports_credentials=True,
      allow_headers=["Content-Type"],
      methods=["GET", "POST", "OPTIONS"]

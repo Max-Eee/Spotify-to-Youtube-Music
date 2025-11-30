@@ -158,9 +158,12 @@ You have two options to run this application:
 
 4. **Run the Flask server**
    ```bash
+   cd backend
    python main.py
    ```
    Server runs on [http://127.0.0.1:8080](http://127.0.0.1:8080)
+   
+   > **Note**: Keep this terminal running while using the application
 
 ### Frontend Setup
 
@@ -179,6 +182,8 @@ You have two options to run this application:
    npm run dev -- --port 3000
    ```
    Frontend runs on [http://127.0.0.1:3000](http://127.0.0.1:3000)
+   
+   > **Note**: Open [http://127.0.0.1:3000](http://127.0.0.1:3000) in your browser (use 127.0.0.1, not localhost)
 
 ## 📖 How to Use
 

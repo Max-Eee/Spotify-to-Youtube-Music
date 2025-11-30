@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+
+# Python virtual environment
+venv/
+env/
+ENV/
+
+# Cache
+.cache/
+*.egg-info/
+.pytest_cache/
+
+# Session files
+flask_session/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Build artifacts
+dist/
+build/
+dist-ssr/
+
+# Local environment overrides only
+.env.local
+.env.*.local

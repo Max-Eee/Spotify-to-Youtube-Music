@@ -3,6 +3,7 @@
 A comprehensive **`web application`** for seamlessly transferring your Spotify playlists to YouTube Music using OAuth authentication.
 
 <samp>
+<img width="2455" height="1075" alt="image" src="https://github.com/user-attachments/assets/e8414ce0-ec86-44da-959c-6fa361fdd324" />
 
 > [!IMPORTANT]
 > **OAuth Setup Required**: You'll need to create OAuth applications for both Spotify and Google (YouTube) to use this application.
